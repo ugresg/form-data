@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form to GitHub</title>
+</head>
+<body>
+  <h2>Form to GitHub Save</h2>
+  <form id="dataForm" enctype="multipart/form-data">
+    <input type="text" name="naam" placeholder="नाम" required><br><br>
+    <input type="text" name="pita" placeholder="पिता का नाम" required><br><br>
+    <input type="text" name="mata" placeholder="माता का नाम" required><br><br>
+    <input type="date" name="dob" required><br><br>
+    <textarea name="address" placeholder="पता" required></textarea><br><br>
+    <input type="file" name="photo" accept="image/*" required onchange="validateSize(this)"><br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="form-submit.js"></script>
+</body>
+</html>
